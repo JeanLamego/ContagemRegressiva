@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
     <title>Contagem Regressiva</title>
 </head>
+
 <body>
-    <div class="container">
+    <div class="containerPage1">
         <h2 class="title">Contagem Regressiva</h1>
-        <div class="contadora">
-            <legend>De um nome para sua contagem</legend>
-            <input type="text"></div>
+            <div class="contadora">
+                <legend class="titleCountdown">De um nome para sua contagem</legend>
+                <input type="text" class="eventInput">
+            </div>
             <legend>Escolha uma data para começar a contagem</legend>
             <input type="date" id="dateInput"></input>
-            <div class="sugestao">
-                <h2 class="sugestoes">Datas mais procuradas</h1>
-                <p>Natal</p>
-                <p>Ano Novo</p>
-                <p>Carnaval</p>
-                <p>Dia das Mães</p>
-                <p>Dia dos Pais</p>
-                <p>Dia dos Namorados</p>
-
-            </div>
-        </div>
+                <h2 class="sugestoes">Datas mais procuradas</h2>    
+                <div class="sugestao">    
+                        <p>Natal</p>
+                        <p>Ano Novo</p>
+                        <p>Carnaval</p>
+                        <p>Dia das Mães</p>
+                        <p>Dia dos Pais</p>
+                        <p>Dia dos Namorados</p>
+                </div>
+                <Button class="sendBtn" id="sendBtn">Criar contagem</Button>
     </div>
+
+    <div class="containerPage2" >
+        <h2 class="eventName">Evento</h2>
+        <div class="cronometro">
+            <div class="time" id="days">00</div>
+            <div class="separator">:</div>
+            <div class="time" id="hours">00</div>
+            <div class="separator">:</div>
+            <div class="time" id="minutes">00</div>
+            <div class="separator">:</div>
+            <div class="time" id="seconds">00</div>     
+    </div>
+    <button class="stopBtn" id="stopBtn">Parar Contagem</button>
+
+    </div>
+
+    
 </body>
+
 </html>

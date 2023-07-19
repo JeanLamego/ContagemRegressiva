@@ -1,0 +1,97 @@
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; 
+}
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    height: 100vh;
+    background-color: rgb(152, 152, 243);
+}
+.containerPage1{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+   
+    
+}
+
+.title, .eventName{
+    font-size: 2.5rem;
+}
+
+.titleCountdown{
+    margin-bottom: .8rem;
+}
+input{
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: 10px;
+    
+}
+legend{
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.sugestao{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+}
+.sendBtn{
+    width: 100%;
+    padding: .8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.sendBtn:hover{
+    transform: scale(1.03);
+
+}
+.containerPage2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 0 auto;
+   
+}
+.cronometro{
+    display: flex;
+    justify-content: center;
+   
+    font-size: 5rem;
+}
+.stopBtn{
+
+    width: 100%;
+    padding: .8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    
+}
+.stopBtn:hover{
+    transform: scale(1.03);
+
+}
