@@ -68,11 +68,16 @@ function startCountdown() {
             return;
         }
 
-        // Calcula os dias, horas, minutos e segundos restantes
+       // Calcula os dias, horas, minutos e segundos restantes
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+  
+  
+
+
+        
 
         // Exibe a contadora regressiva na página
         daysElement.textContent = formatTime(days);
@@ -113,9 +118,12 @@ function startCountdown() {
               default:
                 return;
             }
+
+  
             dateInput.value = eventDate;
             startCountdown();
         }
+    
 
     // Botão "Parar Contagem"
     function stopCountdown(){
