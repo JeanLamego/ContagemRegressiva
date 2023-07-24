@@ -25,8 +25,9 @@ body{
     
 }
 
-.title, .eventName{
+.title, .event-name-second-page{
     font-size: 2.5rem;
+    text-transform:capitalize ;
 }
 
 .title-countdown{
@@ -56,6 +57,17 @@ legend{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 1rem;
+}
+
+a{
+    color: #0B5F94;
+    text-decoration:none ;
+    transition: all .2s ease-in-out;
+}
+a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+
 }
 .sendBtn{
     width: 100%;

@@ -4,6 +4,7 @@ const sendBtn = document.querySelector("#sendBtn");
 const stopBtn= document.getElementById("stopBtn");
 const containerPage1 = document.querySelector(".containerPage1")
 const containerPage2 = document.querySelector(".containerPage2")
+const eventName2 = document.querySelector("#event-name-second-page")
 
 
  let interval;
@@ -43,7 +44,7 @@ function startCountdown() {
     // Esconde a página anterior e mostra a página com a contadora regressiva
     containerPage1.style.display = "none";
     containerPage2.style.display = "flex";
-    eventName.textContent = eventName;
+    eventName2.textContent = eventName;
 
     // Elementos para exibir a contadora regressiva
     const daysElement = document.getElementById("days");
@@ -85,6 +86,37 @@ function startCountdown() {
 
     
     };
+
+    function preencherInputs(eventData) {
+       eventInput.value = eventData;
+        // Defina a data manualmente para cada evento
+        let eventDate;
+        switch (eventData) {
+            case "Natal":
+                eventDate = "2023-12-25";
+                break;
+              case "Ano Novo":
+                eventDate = "2024-01-01";
+                break;
+              case "Carnaval":
+                eventDate = "2024-03-05";
+                break;
+              case "Dia das Mães":
+                eventDate = "2024-05-12";
+                break;
+              case "Dia dos Pais":
+                eventDate = "2024-08-11";
+                break;
+              case "Dia dos Namorados":
+                eventDate = "2024-06-12";
+                break;
+              default:
+                return;
+            }
+            dateInput.value = eventDate;
+            startCountdown();
+        }
+
     // Botão "Parar Contagem"
     function stopCountdown(){
         clearInterval(interval);
@@ -92,7 +124,9 @@ function startCountdown() {
         containerPage2.style.display="none";
         eventInput.value="";
         dateInput.value="";
-        alert("Contagem regressiva parada!");
+        // alert("Contagem regressiva parada!");
     }
+    
 
+      
 
