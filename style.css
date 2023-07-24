@@ -114,5 +114,16 @@ a:hover{
 .stopBtn:hover{
     transform: scale(1.03);
 
+}@media only screen and (max-width: 845px){
+   .containerPage1{
+    width: 100%;
+    
+   }
+   .containerPage2{
+    padding-top: 25vh;
+   }
+   .cronometro{
+    font-size:3.8rem;
+   }
 }
 
