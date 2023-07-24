@@ -88,6 +88,10 @@ function startCountdown() {
     // Botão "Parar Contagem"
     function stopCountdown(){
         clearInterval(interval);
+        containerPage1.style.display="flex";
+        containerPage2.style.display="none";
+        eventInput.value="";
+        dateInput.value="";
         alert("Contagem regressiva parada!");
     }
 

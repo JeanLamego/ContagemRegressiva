@@ -13,11 +13,11 @@
     <div class="containerPage1">
         <h2 class="title">Contagem Regressiva</h1>
             <div class="contadora">
-                <legend class="titleCountdown">De um nome para sua contagem</legend>
-                <input type="text" id="eventInput">
+                <legend class="title-countdown">De um nome para sua contagem</legend>
+                <input type="text" autocomplete="off" id="eventInput">
             </div>
-            <legend>Escolha uma data para começar a contagem</legend>
-            <input type="date" id="dateInput"></input>
+            <legend >Escolha uma data para começar a contagem</legend>
+            <input type="date" autocomplete="off" id="dateInput"></input>
                 <h2 class="sugestoes">Datas mais procuradas</h2>    
                 <div class="sugestao">    
                         <p>Natal</p>
@@ -33,15 +33,28 @@
     <div class="containerPage2" >
         <h2 class="eventName">Evento</h2>
         <div class="cronometro">
-            <div class="time" id="days">00</div>
+            <div class="events-input-box">
+                
+                <div class="time" id="days">00</div>
+                <legend class="time-legend">Dias</legend>
+            </div>
             <div class="separator">:</div>
-            <div class="time" id="hours">00</div>
+            <div class="events-input-box">
+                <div class="time" id="hours">00</div>
+                <legend class="time-legend">Horas</legend>
+            </div>
             <div class="separator">:</div>
-            <div class="time" id="minutes">00</div>
+            <div class="events-input-box">
+                <div class="time" id="minutes">00</div>
+                <legend class="time-legend">Minutos</legend>
+            </div>
             <div class="separator">:</div>
-            <div class="time" id="seconds">00</div>     
+            <div class="events-input-box">
+                <div class="time" id="seconds">00</div>     
+                <legend class="time-legend">Segundos</legend>
+            </div>
     </div>
-    <button class="stopBtn" id="stopBtn">Parar Contagem</button>
+    <button class="stopBtn" id="stopBtn">Resetar Contagem</button>
 
     </div>
 
